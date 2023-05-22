@@ -1,4 +1,5 @@
-# pyenv_virtualenv
+# pyenv_virtualenv 🐍
+
 Instruções para instalação do Pyenv e Virtualenv no sistema operacional Linux.
 A intenção é que as descrições sejam didáticas e de fácil compreensão para facilitar
 o entendimento do desenvolvedor.
@@ -12,7 +13,7 @@ o entendimento do desenvolvedor.
 ```
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm gettext libncurses5-dev tk-dev tcl-dev blt-dev libgdbm-dev git python-dev python3-dev aria2 vim libnss3-tools python3-venv liblzma-dev libpq-dev
 ```
-Caso o seu sistema seja o Linux Cinnamon 21.1, provavelmente a biblioteca " Python-dev " estará obsoleta. Assim, o terminal exibirá alguns pacotes alternativos que podem substituí-lo. Você pode alterar o nome do pacote obsoleto no comando acima e inserí-lo novamente. Porém, caso queira, poderá tentar atualizar o seu repositório de pacotes do sistema com o comando:
+Caso o seu sistema seja o Linux Mint Cinnamon 21.1, provavelmente a biblioteca " Python-dev " estará obsoleta. Assim, o terminal exibirá alguns pacotes alternativos que podem substituí-lo. Você pode alterar o nome do pacote obsoleto no comando acima e inserí-lo novamente. Porém, caso queira, poderá tentar atualizar o seu repositório de pacotes do sistema com o comando:
 
 ```
 sudo apt update
@@ -32,8 +33,8 @@ vim .bashrc
 export PATH="/home/user/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 ```
-Que deve ser inserido após a expressão `fi` no editor. Lembrando que o `user` deve ser trocado pela nome de seu usuário. 
-Porém, como o próprio terminal irá retornar essa expressão a ser inserido no editor, tome o comando acima apenas como um
+Que deve ser inserido após a expressão `fi` no editor. Lembrando que o `user` deve ser trocado pelo nome de seu usuário. 
+Porém, como o próprio terminal irá retornar essa expressão a ser inserida no editor, tome o comando acima apenas como um
 exemplo de quais linhas você deverá selecionar.
 
 * D. Dentro do editor, para inserir um comando, pressione `i` em seu teclado. Após isso, estará apto a editar. Cole o comando acima com `CTRL + SHIFT + V` e em seguida `CRTL + C`para finalizar a inserção e `CRTL + O`para salvar. Por fim, na ultima linha coloque `:x`e pressione enter para sair do editor.
@@ -81,6 +82,27 @@ which python
 
 <h2>Instalação do Virtualenv</h2>
 
+* A. No terminal bash, criaremos uma nova pasta: `mkdir nome_da_pasta` cujo nome pode ser qualquer um.
+
+* B. Listaremos as pastas de nosso diretório: `ls`ou `dir`
+
+* C. Entraremos na pasta criada: `cd nome_da_pasta/`
+
+* D. E então inicializamos a comando: `python3 -m venv venv`
+
+* E. Ao navegarmos pela interface dos nossos arquivos, encontraremos a nova pasta criada, e uma segunda pasta dentro dela chamada `venv`. Dentro de `venv`, haverá inúmeros arquivos, dentre eles a pasta `bin`. É para dentro dela que navegaremos pelo terminal para ativar o nosso ambiente virtual.
+
+* F. De volta ao terminal, iremos inserir o comando: `source venv/bin/activate`
+
+Então é possível perceber que o login do administrador está após o nome da pasta `venv`, desta forma:
+```
+(venv) Usuer@user: ~/venv$ 
+```
+Isso indica que o Virtualenv já está ativado em seu sistama.
+Para desativá-lo, use o comando:
+```
+deactivate
+```
 
 
 
