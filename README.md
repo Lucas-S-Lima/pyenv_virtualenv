@@ -7,7 +7,7 @@ o entendimento do desenvolvedor.
 
 <b>Toda a instalação do gerenciador de versões - Pyenv - será via Terminal.</b>
 
-A. Com o terminal aberto, iniciaremos com a instalação de algumas libs (bibliotecas) importantes que atuarão com ferramentas de compilação, desempacotamento e distribuição de projetos python. 
+* A. Com o terminal aberto, iniciaremos com a instalação de algumas libs (bibliotecas) importantes que atuarão com ferramentas de compilação, desempacotamento e distribuição de projetos python. 
 
 ```
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm gettext libncurses5-dev tk-dev tcl-dev blt-dev libgdbm-dev git python-dev python3-dev aria2 vim libnss3-tools python3-venv liblzma-dev libpq-dev
@@ -17,11 +17,11 @@ Caso o seu sistema seja o Linux Cinnamon 21.1, provavelmente a biblioteca " Pyth
 ```
 sudo apt update
 ```
-B. Em seguida, faremos o download do script de instalação do Pyenv por meio do repositório do GitHub passando um URL ao terminal. 
+* B. Em seguida, faremos o download do script de instalação do Pyenv por meio do repositório do GitHub passando um URL ao terminal. 
 ```
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 ```
-C. Agora, abriremos o editor de texto e iremos inserir a porção de código que foi retornada ao final do processamento do terminal na instrução anterior.
+* C. Agora, abriremos o editor de texto e iremos inserir a porção de código que foi retornada ao final do processamento do terminal na instrução anterior.
 
 ==> Abrindo o editor
 ```
@@ -36,15 +36,15 @@ Que deve ser inserido após a expressão `fi` no editor. Lembrando que o `user` 
 Porém, como o próprio terminal irá retornar essa expressão a ser inserido no editor, tome o comando acima apenas como um
 exemplo de quais linhas você deverá selecionar.
 
-D. Dentro do editor, para inserir um comando, pressione `i` em seu teclado. Após isso, estará apto a editar. Cole o comando acima com `CTRL + SHIFT + V` e em seguida `CRTL + C`para finalizar a inserção e `CRTL + O`para salvar. Por fim, na ultima linha coloque `:x`e pressione enter para sair do editor.
+* D. Dentro do editor, para inserir um comando, pressione `i` em seu teclado. Após isso, estará apto a editar. Cole o comando acima com `CTRL + SHIFT + V` e em seguida `CRTL + C`para finalizar a inserção e `CRTL + O`para salvar. Por fim, na ultima linha coloque `:x`e pressione enter para sair do editor.
 
-E. Feito isso, iniciaremos a instalação do Pyenv propriamente dito com o comando:
+* E. Feito isso, iniciaremos a instalação do Pyenv propriamente dito com o comando:
 ```
 pyenv  install -l
 ```
 Para listas todas as versões. Identifique a que deseja instalar.
 
-F. Instalando a versão desejada:
+* F. Instalando a versão desejada:
 ```
 Pyenv install <versão>
 ```
@@ -54,7 +54,7 @@ Pyenv install 3.9.16
 ```
 Pressione ` ENTER` e aguarde a sua instalação ser concluída.
 
-G. Após finalizada, para usar tal versão, use:
+* G. Após finalizada, para usar tal versão, use:
 ```
 pyenv global <versão>
 ```
